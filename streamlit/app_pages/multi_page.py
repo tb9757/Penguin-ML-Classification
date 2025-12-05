@@ -10,7 +10,7 @@ class MultiPage:
         # Set the page configuration
         st.set_page_config(
             page_title=self.app_name,
-            page_icon=":computer:"
+            page_icon=":penguin:"
         )
 
     # Method to add a new page to the app

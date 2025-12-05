@@ -8,7 +8,7 @@ def page1_body():
     """
     This function displays the content of Page one.
     """
-    st.title("Palmers Penguins ML Classification")
+    
 
     df = pd.read_csv('../data/penguins_cleaned.csv')
     if st.button('View Data'):
