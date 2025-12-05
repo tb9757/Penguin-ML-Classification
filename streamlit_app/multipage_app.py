@@ -8,7 +8,7 @@ from app_pages.page2 import page2_body
 app = MultiPage(app_name= "Palmers Penguins ML Classification")  # Create an instance
 
 # Add your app pages here using .add_page()
-app.add_page("Page 1", page1_body)
-app.add_page("Page 2", page2_body)
+app.add_page("Data", page1_body)
+app.add_page("Visualisations", page2_body)
 
 app.run() # Run the  app

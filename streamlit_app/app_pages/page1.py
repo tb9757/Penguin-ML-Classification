@@ -8,8 +8,14 @@ def page1_body():
     """
     This function displays the content of Page one.
     """
+    
+    st.write('This streamlit app summarises the Palmers Penguins dataset')
     df = pd.read_csv('../data/penguins_cleaned.csv')
+    if "show_table" not in st.session_state:
+        st.session_state.show_table = False
     if st.button('View Data'):
+        st.session_state.show_table = not st.session_state.show_table
+    if st.session_state.show_table:
         st.dataframe(df.head())
 
 
